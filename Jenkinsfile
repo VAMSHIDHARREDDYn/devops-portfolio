@@ -28,8 +28,8 @@ pipeline {
             steps {
                 echo "SONARQUBE ANALYSIS"
                 sh '''mvn sonar:sonar \\
-                      -Dsonar.host.url=http://3.80.128.201:9000/ \\
-                      -Dsonar.login=squ_464b30c7f49ad6b99a5d0cd66bb6b88ccc5a7df3'''
+                      -Dsonar.host.url=http://13.232.130.209:9000 \\
+                      -Dsonar.login=squ_35a6bb3a44f7a8e0f550960e84d6765b203f3899'''
             }
         }
 
