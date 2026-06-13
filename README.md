@@ -1,6 +1,7 @@
 # DevOps Portfolio — Full-Scale CI/CD Pipeline
 
 Full-scale CI/CD pipeline — Java app built with Maven, scanned with SonarQube and Trivy, containerized with Docker, and deployed to Kubernetes on EKS via ArgoCD GitOps automation.
+<img width="1447" height="736" alt="full-scale-project" src="https://github.com/user-attachments/assets/d7f2e5b6-4b81-49b1-817b-42cc3c13840e" />
 
 ## Pipeline Flow
 
