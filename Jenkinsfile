@@ -59,7 +59,7 @@ pipeline {
                         sed -i "s/devops-portfolio:.*/devops-portfolio:${BUILD_NUMBER}/g" deploymentfiles/deployment.yaml
                         git add deploymentfiles/deployment.yaml
                         git commit -m "update deployment image to version ${BUILD_NUMBER}"
-                        git push https://VAMSHIDHARREDDYn:\${GIT_TOKEN}@github.com/VAMSHIDHARREDDYn/devops-portfolio.git HEAD:main
+                        git push https://VAMSHIDHARREDDYn:${GIT_TOKEN}@github.com/VAMSHIDHARREDDYn/devops-portfolio.git HEAD:main
                     """
                 }
             }
