@@ -28,8 +28,8 @@ pipeline {
             steps {
                 echo "SONARQUBE ANALYSIS"
                 sh '''mvn sonar:sonar \\
-                      -Dsonar.host.url=http://13.232.130.209:9000 \\
-                      -Dsonar.login=squ_35a6bb3a44f7a8e0f550960e84d6765b203f3899'''
+                      -Dsonar.host.url=http://13.204.46.134:9000 \\
+                      -Dsonar.login=squ_ca4476bdca25d31d272955b49857278ad24e0f5d'''
             }
         }
 
@@ -57,5 +57,20 @@ pipeline {
                 }
             }
         }
+stage('Update deployment file') {
+    steps {
+        echo 'Update deployment file'
+        withCredentials([string(credentialsId: 'githubtoken', variable: 'githubtoken')]) {
+            sh """
+                git config user.email "vamshixxxxxlly@gmail.com"
+                git config user.name "vamshi"
+                sed -i "s/devops-portfolio:.*/devops-portfolio:${BUILD_NUMBER}/g" deploymentfiles/deployment.yaml
+                git add deploymentfiles/deployment.yaml
+                git commit -m "update deployment image to version ${BUILD_NUMBER}"
+                git push https://VAMSHIDHARREDDYn:${githubtoken}@github.com/VAMSHIDHARREDDYn/devops-portfolio.git HEAD:main
+            """
+        }
+    }
+}
     }
 }
