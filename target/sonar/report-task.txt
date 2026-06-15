@@ -1,6 +1,0 @@
-projectKey=com.vamshidhar:portfolio
-serverUrl=http://13.204.46.134:9000
-serverVersion=26.6.0.123539
-dashboardUrl=http://13.204.46.134:9000/dashboard?id=com.vamshidhar%3Aportfolio
-ceTaskId=a9d63f90-f17c-4919-94ea-8e7bd99f395d
-ceTaskUrl=http://13.204.46.134:9000/api/ce/task?id=a9d63f90-f17c-4919-94ea-8e7bd99f395d
