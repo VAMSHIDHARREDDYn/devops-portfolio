@@ -1,0 +1,6 @@
+target/
+*.war
+*.class
+*.jar
+results.json
+.DS_Store
