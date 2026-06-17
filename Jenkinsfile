@@ -53,7 +53,7 @@ pipeline {
 
         stage('Docker push') {
             steps {
-                withCredentials([string(credentialsId: 'dockerhub', variable: 'DOCKER_PASS')]) {
+                withCredentials([string(credentialsId: 'dockerhub', variable: 'dockerhub')]) {
                     sh "echo ${DOCKER_PASS} | docker login -u vamshi82 --password-stdin"
                 }
                 sh "docker push ${DOCKER_IMAGE}:${DOCKER_TAG}"
@@ -63,7 +63,7 @@ pipeline {
 
         stage('Update deployment manifest') {
             steps {
-                withCredentials([string(credentialsId: 'githubtoken', variable: 'GIT_TOKEN')]) {
+                withCredentials([string(credentialsId: 'githubtoken', variable: 'githubtoken')]) {
                     sh """
                         git config user.email "nvamshidharreddy7262@gmail.com"
                         git config user.name "VAMSHIDHARREDDYn"
