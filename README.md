@@ -107,8 +107,8 @@ Developer  →  git push
 
 | Server | Instance | Purpose |
 |---|---|---|
-| Jenkins + SonarQube | t3.medium | CI pipeline execution + code analysis |
-| EKS Nodes | t3.small × 2 (active) | Kubernetes workloads |
+| Jenkins + SonarQube | t3.micro | CI pipeline execution + code analysis |
+| EKS Nodes | t3.micro × 8 (active) | Kubernetes workloads |
 
 > **Cost note:** EKS cluster runs only during active sessions and is deleted via `eksctl delete cluster` to avoid charges. All screenshots were taken during a live session.
 
