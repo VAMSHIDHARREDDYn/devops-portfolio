@@ -79,7 +79,7 @@ Developer  →  git push
 ![ArgoCD Service](screenshots/argocd-svc.png)
 
 ### EKS Nodes — 8 Nodes Ready (Kubernetes v1.34.8)
-![Nodes](screenshots/nodes_.png)
+![Nodes](screenshots/nodes'.png)
 
 ### Pods Running in Portfolio Namespace
 ![Pods](screenshots/pods-in-portfolio-namespace.png)
