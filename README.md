@@ -64,7 +64,7 @@ Developer  →  git push
 ![Jenkins Pipeline](screenshots/jenkins-pipeline.png)
 
 ### SonarQube — Quality Gate Passed
-![SonarQube](screenshots/sonarqube-analysis.png)
+![SonarQube](screenshots/sonarqube.png)
 
 ### Jenkins Credentials Manager — No Hardcoded Secrets
 ![Credentials](screenshots/credentials-manager.png)
