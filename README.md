@@ -2,7 +2,7 @@
 
 End-to-end CI/CD pipeline: Java web app built with Maven, quality-gated with SonarQube, security-scanned with Trivy, containerized with Docker, and deployed to AWS EKS via ArgoCD GitOps — fully automated from `git push` to live application. **Total pipeline runtime: ~49 seconds. Zero manual steps. Zero downtime.**
 
-<img width="1447" height="736" alt="full-scale-project" src="https://github.com/user-attachments/assets/d7f2e5b6-4b81-49b1-817b-42cc3c13840e" />
+<img width="1024" height="520" alt="architectural-image" src="https://github.com/user-attachments/assets/065a78a1-eb48-46b3-9d6b-ff930dcbabb2" />
 
 ---
 
