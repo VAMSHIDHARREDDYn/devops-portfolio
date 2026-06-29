@@ -6,7 +6,7 @@ pipeline {
     environment {
         DOCKER_IMAGE = "vamshi82/devops-portfolio"
         DOCKER_TAG   = "${BUILD_NUMBER}"
-        SONAR_URL    = "http://43.204.220.202:9000"
+        SONAR_URL    = "http://52.66.223.140:9000/"
     }
     stages {
         stage('Git checkout') {
