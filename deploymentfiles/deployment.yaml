@@ -22,7 +22,7 @@ spec:
     spec:
       containers:
         - name: portfolio-container
-          image: vamshi82/devops-portfolio:11
+          image: vamshi82/devops-portfolio:12
           ports:
             - containerPort: 8080
           livenessProbe:
